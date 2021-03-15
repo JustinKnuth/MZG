@@ -70,7 +70,7 @@ https://github.com/JustinKnuth/MZG/blob/main/mzg/Wireframes%20/Mobile%20cont..pn
 
 ## Component Hierarchy 
 
-https://github.com/JustinKnuth/MZG/blob/main/mzg/Wireframes%20/Screen%20Shot%202021-03-15%20at%203.40.42%20PM.png
+https://github.com/JustinKnuth/MontpelierZombieGuide/blob/main/mzg/Wireframes%20/Screen%20Shot%202021-03-15%20at%205.28.22%20PM.png
 
 
 
@@ -80,21 +80,20 @@ https://github.com/JustinKnuth/MZG/blob/main/mzg/Wireframes%20/Screen%20Shot%202
 
 #### MVP 
 - Structure website(JSX) in a clean and readable fashion
-- Style website in a modern fashion with a nice color palette
+- Style website with grid and/or flex
 - Write scripts to add functionality and usability to the site
-- Utilize CRUD to create a fully functioning user-based website 
+- Utilize the create and read aspects of CRUD to create a fully functioning user-based website 
 - Render guides and comments on the page
-- Allow users to utilize a form to provide feedback 
-- Include a like or upvote button
+- Allow users to use a form to provide feedback 
+
 
 
 #### PostMVP  
 
 
 - When a suggestion reaches a certain number of upvotes, it is appeneded to the guide
-- Import data from CDC
-- Utilize Google Maps web api
-
+- Use a third-party API (GoogleMaps and/or CDC)
+- Include a like or upvote button
 
 
 ## Project Schedule
@@ -104,7 +103,7 @@ https://github.com/JustinKnuth/MZG/blob/main/mzg/Wireframes%20/Screen%20Shot%202
 |---|---| ---|
 |Mar 15| Prompt / Wireframes / Timeframes / Project Approval | incomplete
 |Mar 16| Core Structure / Airtable / Pseudocode | incomplete
-|Mar 17| API Calls and CRUD / CSS | incomplete
+|Mar 17| API Calls and Component Writing / CSS | incomplete
 |Mar 18| Render Data / MVP | incomplete /
 |Mar 19| Initial Clickable Model  | incomplete
 |Mar 20| Responsive Design / Refine CSS | incomplete
@@ -121,19 +120,18 @@ https://github.com/JustinKnuth/MZG/blob/main/mzg/Wireframes%20/Screen%20Shot%202
 | Planning / Preparation  | H | 3hrs| 0hrs | 0hrs |
 | Research Similar Products | L | 3hrs | 0hr | 0hr |
 | Core Structure  | H | 3hr | 0hr | 0hr |
-| CSS Box Organization  | H | 3hrs | 0hrs | 0hrs
+| CSS grid and/or flex styling  | H | 3hrs | 0hrs | 0hrs
 | Pseudocode  | L | 1hr | 0m | 0m |
-| CRUD for API  | H | 3hrs | 0hrs | 0hrs |
+| Create and read functions for API  | H | 3hrs | 0hrs | 0hrs |
 | Retrieve Correct Data  | H | 3hrs | 0hr | 0hr |
 | Display Correct Data | H | 3hrs | 0hrs | 0hrs |
 | Media Queries | H | 3hrs | 0hrs | 0hrs |
-| CSS Body Styling | L | 2hrs | 0hr | 0hr |
 | Navigation Menu Creation and Style | H | 2.5hrs | 0hrs | 0hrs |
 | Create User-Friendly Experience | H | 3hrs | 0hrs | 0hrs |
 | Debugging | H | 3hrs | 0hr | 0hr |
 | Code Organization for Readability | H | 2hrs | 0hr | 0hr
 | Image-Sizing | H | 2hrs | 0hr | 0hr |
-| Total | H | 39.5hrs | 0hrs | 0hrs |
+| Total | H | 35.5hrs | 0hrs | 0hrs |
 
 
 ## SWOT
