@@ -84,6 +84,7 @@ https://github.com/JustinKnuth/MontpelierZombieGuide/blob/main/mzg/Wireframes%20
 - Utilize the create and read aspects of CRUD to create a fully functioning user-based website 
 - Render guides and comments on the page
 - Allow users to use a form to provide feedback 
+- Add a filter for the guides on the 'All Guides' page
 
 
 
