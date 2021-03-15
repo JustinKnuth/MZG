@@ -70,8 +70,7 @@ https://github.com/JustinKnuth/MZG/blob/main/mzg/Wireframes%20/Mobile%20cont..pn
 
 ## Component Hierarchy 
 
-https://github.com/JustinKnuth/MontpelierZombieGuide/blob/main/mzg/Wireframes%20/Screen%20Shot%202021-03-15%20at%205.28.22%20PM.png
-
+https://github.com/JustinKnuth/MontpelierZombieGuide/blob/main/mzg/Wireframes%20/Screen%20Shot%202021-03-15%20at%206.09.55%20PM.png
 
 
 
