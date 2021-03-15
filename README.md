@@ -66,12 +66,16 @@ https://github.com/JustinKnuth/MZG/blob/main/mzg/Wireframes%20/Mobile.png
 https://github.com/JustinKnuth/MZG/blob/main/mzg/Wireframes%20/Mobile%20cont..png
 
 
+
+
 ## Component Hierarchy 
 
 https://github.com/JustinKnuth/MZG/blob/main/mzg/Wireframes%20/Screen%20Shot%202021-03-15%20at%203.40.42%20PM.png
 
 
-### MVP/PostMVP
+
+
+## MVP/PostMVP
 
 
 #### MVP 
@@ -90,6 +94,8 @@ https://github.com/JustinKnuth/MZG/blob/main/mzg/Wireframes%20/Screen%20Shot%202
 - When a suggestion reaches a certain number of upvotes, it is appeneded to the guide
 - Import data from CDC
 - Utilize Google Maps web api
+
+
 
 ## Project Schedule
 
