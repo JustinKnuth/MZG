@@ -2,18 +2,91 @@
   text-align: center;
 }
 
+body{
+  position: absolute;
+    top: 0; /* Header Height */
+     /* Footer Height */
+    width: 100%;
+}
+
+header {
+  text-align: center;
+  height:100%;
+  background-color: #01533f;
+  padding-bottom: 50px;
+}
+
 header h1 {
-  background-color: #01533F;
   color: white;
+  font-family: "Overlock SC", cursive;
+  margin-top: 0;
+  
 }
 
 ul {
   list-style-type: none;
+  margin: 0 auto;
+  justify-content: center;
+}
+li {
+  display: inline;
+  color: #1375af;
+  margin: 0 10px;
+}
+nav {
+  background-color: #b2d23e;
+  font-family: "Overlock SC", cursive;
+  text-align: center;
+}
 
+p{
+  font-family: "Overlock SC", cursive;
 }
-li{
-  display:inline;
+
+img{
+  border-style: solid;
+  border-color:#3e4981;
+  border-radius: 10px;
+  box-shadow:  #b2d23e 0px 19px 38px,
+  #1375af 0px 15px 12px;
 }
-nav{
-  background-color: #B2D23E;
+
+.message-form {
+  width: 300px;
+  height: 200px;
+}
+.guide {
+  background-color: #3e4981;
+  color: white;
+  font-family: "Overlock SC", cursive;
+  text-align: center;
+  width: 90%;
+  margin: 50px auto;
+  border-style: groove;
+  border-color: #b2d23e;
+  border-radius: 10px;
+  box-shadow: #01533f 0px 19px 38px,
+  #A7D4EE 0px 15px 12px;
+}
+
+.guide h4{
+  color: #b2d23e;
+}
+
+.guide2 {
+  background-color: #1375af;
+  color: white;
+  font-family: "Overlock SC", cursive;
+  text-align: center;
+  width: 90%;
+  margin: 50px auto;
+  border-style: groove;
+  border-color: #b2d23e;
+  border-radius: 10px;
+  box-shadow:  #01533f 0px 19px 38px,
+  #A7D4EE 0px 15px 12px;
+}
+
+.guide2 h4{
+  color: #F47D20 ;
 }
