@@ -102,8 +102,8 @@ https://github.com/JustinKnuth/MZG/blob/main/mzg/Wireframes%20/Mobile%20cont..pn
 |  Day | Deliverable | Status
 |---|---| ---|
 |Mar 15| Prompt / Wireframes / Timeframes / Project Approval | Complete
-|Mar 16| Core Structure / Airtable / Pseudocode | incomplete
-|Mar 17| API Calls and Component Writing / CSS | incomplete
+|Mar 16| Core Structure / Airtable / Pseudocode | Complete
+|Mar 17| API Calls and Component Writing / CSS | Complete
 |Mar 18| Render Data / MVP | incomplete /
 |Mar 19| Initial Clickable Model  | incomplete
 |Mar 20| Responsive Design / Refine CSS | incomplete

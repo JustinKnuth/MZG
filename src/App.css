@@ -1,3 +1,8 @@
+* {
+  font-family: "Overlock SC", cursive;
+}
+
+
 .App {
   text-align: center;
 }
@@ -18,7 +23,6 @@ header {
 
 header h1 {
   color: white;
-  font-family: "Overlock SC", cursive;
   margin-top: 0;
   
 }
@@ -35,7 +39,6 @@ li {
 }
 nav {
   background-color: #b2d23e;
-  font-family: "Overlock SC", cursive;
   text-align: center;
 }
 
@@ -58,7 +61,6 @@ img{
 .guide-1 {
   background-color: #3e4981;
   color: white;
-  font-family: "Overlock SC", cursive;
   text-align: center;
   width: 90%;
   margin: 50px auto;
@@ -81,7 +83,6 @@ img{
 .guide-2 {
   background-color: #1375af;
   color: white;
-  font-family: "Overlock SC", cursive;
   text-align: center;
   width: 90%;
   margin: 50px auto;
