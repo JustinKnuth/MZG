@@ -7,9 +7,8 @@ function Home() {
 
   return (
     <div className="App">
-    <Nav />
     
-    <Route exact path="/">
+    
     <div>
       <p>
         Welcome to Montpelier Zombie Guide. Here you will find everything you
@@ -47,7 +46,7 @@ function Home() {
         alt="The woods in the fall"
       />
       </div>
-      </Route>
+      
   </div>
 
 

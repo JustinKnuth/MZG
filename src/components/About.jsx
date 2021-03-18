@@ -7,7 +7,7 @@ function About() {
   return (
     
     <div>
-      <Nav />
+      
       <h1>About</h1>
       <p>MZG was created for the sole purpose of preparing people for a zombie apocalypse.
       Though it seems unlikely that anything like that will happen, anything is possible.

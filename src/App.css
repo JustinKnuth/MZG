@@ -55,7 +55,7 @@ img{
   width: 300px;
   height: 200px;
 }
-.guide {
+.guide-1 {
   background-color: #3e4981;
   color: white;
   font-family: "Overlock SC", cursive;
@@ -67,13 +67,18 @@ img{
   border-radius: 10px;
   box-shadow: #01533f 0px 19px 38px,
   #A7D4EE 0px 15px 12px;
+
 }
 
-.guide h4{
+.guide-1 h4{
   color: #b2d23e;
 }
+.guide-1 a{
+  text-decoration: none;
+  color: whitesmoke;
+}
 
-.guide2 {
+.guide-2 {
   background-color: #1375af;
   color: white;
   font-family: "Overlock SC", cursive;
@@ -87,6 +92,10 @@ img{
   #A7D4EE 0px 15px 12px;
 }
 
-.guide2 h4{
+.guide-2 h4{
   color: #F47D20 ;
+}
+.guide-2 a{
+  text-decoration: none;
+  color: whitesmoke;
 }
