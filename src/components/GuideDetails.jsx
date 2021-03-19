@@ -1,20 +1,15 @@
+import axios from "axios"
 import { useEffect, useState, } from "react"
 import { useParams } from "react-router-dom"
+import { baseURL, config } from "../services"
+import Comments from "./Comments.jsx"
 import {
   travelEssentials, fun, sanitation, pets, escapeRoutes,
   sewage, food, comms, doNots, friends, music, water,
   weapons, shelters, dooze
 } from "../services"
-import TableSwitcher from "./TableSwitcher.jsx"
-import { Link, Route } from "react-router-dom"
-import AllGuides from "./AllGuides.jsx"
-import Guide from "./Guide.jsx"
-import Nav from "./Nav.jsx"
-import axios from "axios"
-import Comments from "./Comments.jsx"
 
 
-let table = '';
 
 function GuideDetails(props) {
   const params = useParams()
@@ -22,99 +17,116 @@ function GuideDetails(props) {
   const found = guides.find((item) => item.id === params.id)
   const [content, setContent] = useState("");
   const [author, setAuthor] = useState("");
-  let table;
-  
+  const [toggleFetch, setTogglefetch] = useState(false)
+  const [posts, setPosts] = useState([])
 
 
 
-  // switch (params.id) {
-  //   case travelEssentials:
-  //     table = 'essentials';
-  //     break;
-  //   case fun:
-  //     table = 'funs';
-  //     break;
-  //   case sanitation:
-  //     table = 'sanitize';
-  //     break;
-  //   case pets:
-  //     table = 'pet';
-  //     break;
-  //   case escapeRoutes:
-  //     table = 'escape';
-  //     break;
-  //   case sewage:
-  //     table = 'poops';
-  //     break;
-  //   case food:
-  //     table = 'foob';
-  //     break;
-  //   case comms:
-  //     table = 'comm';
-  //     break;
-  //   case doNots:
-  //     table = 'dont';
-  //     break;
-  //   case friends:
-  //     table = 'friendship';
-  //     break;
-  //   case music:
-  //     table = 'sounds';
-  //     break;
-  //   case water:
-  //     table = 'h2o';
-  //     break;
-  //   case weapons:
-  //     table = 'weaponize';
-  //     break;
-  //   case shelters:
-  //     table = 'shelter';
-  //     break;
-  //   case dooze:
-  //     table = 'do';
-  //     break;
-  //   default:
-  //     alert('sorry');
+  let table = '';
+                      ////// Switch statement to change the URL id to match the table
+  switch (params.id) {
+    case travelEssentials:
+      table = 'essentials';
+      break;
+    case fun:
+      table = 'funs';
+      break;
+    case sanitation:
+      table = 'sanitize';
+      break;
+    case pets:
+      table = 'pet';
+      break;
+    case escapeRoutes:
+      table = 'escape';
+      break;
+    case sewage:
+      table = 'bathroom';
+      break;
+    case food:
+      table = 'foob';
+      break;
+    case comms:
+      table = 'comm';
+      break;
+    case doNots:
+      table = 'dont';
+      break;
+    case friends:
+      table = 'friendship';
+      break;
+    case music:
+      table = 'sounds';
+      break;
+    case water:
+      table = 'h2o';
+      break;
+    case weapons:
+      table = 'weaponize';
+      break;
+    case shelters:
+      table = 'shelter';
+      break;
+    case dooze:
+      table = 'do';
+      break;
+    default:
+      alert('We are experiencing technical difficulties');
+  }
 
 
-  // }
-  
-  
+  useEffect(() => {
+    const getComments = async () => {
+      const res = await axios.get(`${baseURL}/${table}`, config)
+      setPosts(res.data.records)
+    }
+    getComments()
+  }, [toggleFetch])
 
+
+                                    ////////event handler for comment posting
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newComment = {
       content,
       author,
     };
-    await axios.post(`https://api.airtable.com/v0/appP8Am4eIgzdu7Ma/${table}?api_key=keyiWYDbJx9kSGQOw`, { fields: newComment });
+    await axios.post(`${baseURL}/${table}`,  { fields: newComment }, config)
+    setTogglefetch(!toggleFetch)
   };
 
-
-  console.log(table)
 
 
   if (!found) {
     return <h2>Loading</h2>
   }
+  
   const { description } = found.fields
-  return (
-    
 
+
+  return (
     <div>
-      <TableSwitcher />
       <div>
         <h1>{description}</h1>
       </div>
       <div>
-      <form onSubmit={handleSubmit}>
-      <h4>Leave a comment or suggestion</h4>
-      <label>Content:</label>
-      <input value={content} onChange={(e) => setContent(e.target.value)} />
-      <label>Author:</label>
-      <input value={author} onChange={(e) => setAuthor(e.target.value)} />
-      <button type="submit">Chirp!</button>
-    </form>
+        <form onSubmit={handleSubmit}>
+          <h4>Leave a comment or suggestion</h4>
+          <label>Content:</label>
+          <input value={content} onChange={(e) => setContent(e.target.value)} />
+          <label>Author:</label>
+          <input value={author} onChange={(e) => setAuthor(e.target.value)} />
+          <button type="submit">Send it!</button>
+        </form>
+      </div>
+
+      <div>
+        {posts.map((post) => (
+          
+          <Comments comment={post}
+            setTogglefetch={setTogglefetch}
+            key={post.id}/>
+        ))}
       </div>
 
     </div>
