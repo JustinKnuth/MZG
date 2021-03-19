@@ -100,3 +100,16 @@ img{
   text-decoration: none;
   color: whitesmoke;
 }
+
+.comments {
+  background-color:    #01533F;
+  color: white;
+  text-align: center;
+  width: 90%;
+  margin: 50px auto;
+  border-style: groove;
+  border-color: #b2d23e;
+  border-radius: 10px;
+  box-shadow:  #1375AF 0px 19px 38px,
+  #A7D4EE 0px 15px 12px;
+}
