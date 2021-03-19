@@ -9,6 +9,7 @@ function Guide(props) {
   const { title, guide, quote, quoter } = props.individualGuide.fields
   const { index } = props
   
+  
   return (
     <div className={index % 2 === 0 ? "guide-1" : "guide-2"}>
 

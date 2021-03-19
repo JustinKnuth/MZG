@@ -10,6 +10,7 @@ import AllGuides from "./components/AllGuides.jsx";
 import { baseURL, config } from "./services";
 import GuideDetails from "./components/GuideDetails.jsx";
 import Guide from "./components/Guide.jsx";
+import Comments from "./components/Comments.jsx"
 
 function App() {
   const [guides, setGuides] = useState([])
