@@ -9,8 +9,8 @@ function Home() {
     <div className="App">
     
     
-    <div>
-      <p>
+    <div className="home">
+      <p className="home-p">
         Welcome to Montpelier Zombie Guide. Here you will find everything you
         need to know in order to survive a zombie apocalypse. There are guides
         for just about everything. Feel free to look around and if you have
@@ -18,7 +18,7 @@ function Home() {
         user input is encouraged. Stay safe....
       </p>
       <img src="/main.jpeg" height="auto" width="400px" alt="Main Street" />
-      <p>
+      <p className="home-p">
         Montpelier, Vermont is the smallest state capitol in the country.
         Surrounded by mountains and hills, it is imperative that we understand
         what to do in case of a zombie apocalypse. That includes knowing what
@@ -32,7 +32,7 @@ function Home() {
         width="400px"
         alt="Winooski River"
       />
-      <p>
+      <p className="home-p">
         The State of Vermont is around 74% forested. This makes VT the 4th
         most forested state in the country. The first two are our neighbors,
         Maine and New Hampshire. In the event of a zombie invasion, knowing

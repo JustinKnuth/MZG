@@ -22,6 +22,7 @@ function GuideDetails(props) {
     const getComments = async () => {
       const res = await axios.get(`${baseURL}/${switchIt(params.id)}`, config)
       setPosts(res.data.records)
+      window.scrollTo(0,0)
     }
     getComments()
   }, [toggleFetch])
@@ -50,7 +51,7 @@ function GuideDetails(props) {
   return (
     <div>
       <div>
-        <p>{description}</p>
+        <p style={{fontSize: "20px"}}>{description}</p>
         
 
       </div>
