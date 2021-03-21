@@ -1,7 +1,7 @@
 import {
   travelEssentials, fun, sanitation, pets, escapeRoutes,
-  sewage, food, comms, doNots, friends, music, water,
-  weapons, shelters, dooze
+  sewage, food, comms, friends, music, water,
+  weapons, shelters
 } from "../services"
 
  export const switchIt = (paramId) => {
@@ -33,9 +33,6 @@ import {
     case comms:
       table = 'comm';
       break;
-    case doNots:
-      table = 'dont';
-      break;
     case friends:
       table = 'friendship';
       break;
@@ -50,9 +47,6 @@ import {
       break;
     case shelters:
       table = 'shelter';
-      break;
-    case dooze:
-      table = 'do';
       break;
     default:
       alert('We are experiencing technical difficulties');

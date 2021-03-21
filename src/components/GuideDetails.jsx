@@ -17,18 +17,7 @@ function GuideDetails(props) {
   const [toggleFetch, setToggleFetch] = useState(false)
   const [posts, setPosts] = useState([])
 
-  useEffect(() => {
 
-    const getComments = async () => {
-      const res = await axios.get(`${baseURL}/${switchIt(params.id)}`, config)
-      setPosts(res.data.records)
-      window.scrollTo(0,0)
-    }
-    getComments()
-  }, [toggleFetch])
-
-
-                                    ////////event handler for comment posting
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newComment = {
@@ -41,8 +30,18 @@ function GuideDetails(props) {
     setContent("")
   };
 
+  useEffect(() => {
 
+    const getComments = async () => {
+      const res = await axios.get(`${baseURL}/${switchIt(params.id)}`, config)
+      setPosts(res.data.records)
+      window.scrollTo(0,0)
+    }
+    getComments()
+  }, [toggleFetch])
+  
 
+  
   if (!found) {
     return <h2>Loading</h2>
   }
@@ -58,10 +57,8 @@ function GuideDetails(props) {
       <div>
         <form id="form" onSubmit={handleSubmit}>
           <h4 style={{textAlign:"center"}}>ADD TO THE GUIDE</h4>
-          <label>Suggestion:</label>
-          <input value={content} onChange={(e) => setContent(e.target.value)} />
-          <label>Name:</label>
-          <input value={name} onChange={(e) => setName(e.target.value)} />
+          <input value={content} placeholder="Guide Suggestion" onChange={(e) => setContent(e.target.value)} /><br/>
+          <input value={name} placeholder="Your Name" onChange={(e) => setName(e.target.value)} /><br/>
           <button type="submit">Send it!</button>
         </form>
       </div>
@@ -78,7 +75,6 @@ function GuideDetails(props) {
     </div>
   )
 }
-
 
 
 

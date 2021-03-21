@@ -28,17 +28,18 @@ header h1 {
 
 ul {
   list-style-type: none;
+  display: flex;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: space-around;
 }
 li {
-  display: inline;
   color: #1375af;
-  margin: 0 10px;
+  text-decoration: none;
 }
 nav {
   background-color: #b2d23e;
   text-align: center;
+  font-size: 20px;
 }
 
 img{
@@ -53,7 +54,7 @@ form {
   text-align: center;
   background-color: #616C59;
   color: whitesmoke;
-  width: 90%;
+  width: 60%;
   margin: 50px auto;
   border-style: groove;
   border-color: #b2d23e;
@@ -61,6 +62,16 @@ form {
   box-shadow:  #1375AF 0px 19px 38px,
   #A7D4EE 0px 15px 12px;
   padding-bottom: 10px;
+}
+
+button {
+  background-color: #b2d23e;
+
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 

@@ -21,15 +21,6 @@ function About() {
       This guide was created to help people understand just how to survive in the worst possible scenario.
       Feel free to speak your thoughts and reach out to me if you have any suggestions.
       You can contact me via the form below. Enjoy and stay safe...  </p>
-
-      <form>
-        <input type="text" placeholder="name(optional)"/>
-        <input type="text" placeholder="email(optional)"/>
-        <input type="text" className="message-form" placeholder="Questions, comments or concerns" />
-        <button type="submit">Submit</button>
-      </form>
-
-
     </div>
 
   )
