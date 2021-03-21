@@ -12,8 +12,9 @@ function GuideDetails(props) {
   const { guides } = props
   const found = guides.find((item) => item.id === params.id)
   const [content, setContent] = useState("");
-  const [author, setAuthor] = useState("");
-  const [toggleFetch, setTogglefetch] = useState(false)
+  const [name, setName] = useState("");
+  const [date, setDate] = useState('')
+  const [toggleFetch, setToggleFetch] = useState(false)
   const [posts, setPosts] = useState([])
 
   useEffect(() => {
@@ -31,10 +32,12 @@ function GuideDetails(props) {
     e.preventDefault();
     const newComment = {
       content,
-      author,
+      name,
     };
-    await axios.post(`${baseURL}/${switchIt(params.id)}`,  { fields: newComment }, config)
-    setTogglefetch(!toggleFetch)
+    await axios.post(`${baseURL}/${switchIt(params.id)}`, { fields: newComment }, config)
+    setToggleFetch(!toggleFetch)
+    setName("")
+    setContent("")
   };
 
 
@@ -44,20 +47,20 @@ function GuideDetails(props) {
   }
   
   const { description } = found.fields
-
-
   return (
     <div>
       <div>
-        <h1>{description}</h1>
+        <p>{description}</p>
+        
+
       </div>
       <div>
-        <form onSubmit={handleSubmit}>
-          <h4>Leave a comment or suggestion</h4>
-          <label>Content:</label>
+        <form id="form" onSubmit={handleSubmit}>
+          <h4 style={{textAlign:"center"}}>ADD TO THE GUIDE</h4>
+          <label>Suggestion:</label>
           <input value={content} onChange={(e) => setContent(e.target.value)} />
-          <label>Author:</label>
-          <input value={author} onChange={(e) => setAuthor(e.target.value)} />
+          <label>Name:</label>
+          <input value={name} onChange={(e) => setName(e.target.value)} />
           <button type="submit">Send it!</button>
         </form>
       </div>
@@ -66,7 +69,7 @@ function GuideDetails(props) {
         {posts.map((post) => (
           
           <Comments comment={post}
-            setTogglefetch={setTogglefetch}
+            setToggleFetch={setToggleFetch}
             key={post.id}/>
         ))}
       </div>
