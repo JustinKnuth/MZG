@@ -54,6 +54,10 @@ img{
   #1375af 0px 15px 12px;
 }
 
+form {
+  text-align: center;
+}
+
 .filter{
   background-color:    #616C59;
   color: white;
@@ -125,4 +129,7 @@ img{
   border-radius: 10px;
   box-shadow:  #1375AF 0px 19px 38px,
   #A7D4EE 0px 15px 12px;
+}
+.comments h5 {
+  color: #F47D20;
 }
