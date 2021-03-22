@@ -24,8 +24,9 @@ function GuideDetails(props) {
 
     const getComments = async () => {
       const res = await axios.get(`${baseURL}/${switchIt(params.id)}`, config)
-      setPosts(res.data.records)
-      window.scrollTo(0,0)
+      const dates = res.data.records.sort((a,b) => new Date(b.fields.date) - new Date(a.fields.date))
+      setPosts(dates)
+      window.scrollTo(0, 0)
     }
     getComments()
   }, [toggleFetch])
