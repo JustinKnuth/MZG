@@ -38,10 +38,7 @@ function App() {
       <Route path="/guide-details/:id">
         <GuideDetails guides={guides} />
       </Route>
-    <div>
-
-      <footer>&copy;finroo</footer>
-    </div>
+    
     </div>
   );
 }

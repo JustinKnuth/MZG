@@ -1,5 +1,4 @@
-import { Link, Route } from "react-router-dom"
-import Nav from "./Nav.jsx"
+
 
 function About() {
 
