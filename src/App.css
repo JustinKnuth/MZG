@@ -20,6 +20,11 @@ header {
   padding-bottom: 50px;
 }
 
+footer{
+background-color: #01533F;
+text-align: center;
+}
+
 header h1 {
   color: white;
   margin-top: 0;
@@ -76,7 +81,7 @@ nav a {
 
 .details{
   font-size: 20px;
-  
+  margin: 20px 60px;
 }
 
 .home {

@@ -18,6 +18,19 @@ function GuideDetails(props) {
   const [posts, setPosts] = useState([])
 
 
+  
+
+  useEffect(() => {
+
+    const getComments = async () => {
+      const res = await axios.get(`${baseURL}/${switchIt(params.id)}`, config)
+      setPosts(res.data.records)
+      window.scrollTo(0,0)
+    }
+    getComments()
+  }, [toggleFetch])
+
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newComment = {
@@ -29,16 +42,6 @@ function GuideDetails(props) {
     setName("")
     setContent("")
   };
-
-  useEffect(() => {
-
-    const getComments = async () => {
-      const res = await axios.get(`${baseURL}/${switchIt(params.id)}`, config)
-      setPosts(res.data.records)
-      window.scrollTo(0,0)
-    }
-    getComments()
-  }, [toggleFetch])
   
 
 

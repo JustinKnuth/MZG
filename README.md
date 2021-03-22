@@ -2,7 +2,7 @@
 
 ## Monteplier Zombie Guide
 
-#### URL - montpelierzombieguide.com
+#### URL - https://montpelierzombieguide.netlify.app
 
 ## Project Description
 
@@ -84,7 +84,6 @@ https://github.com/JustinKnuth/MZG/blob/main/mzg/Wireframes%20/Mobile%20cont..pn
 - Utilize the create and read aspects of CRUD to create a fully functioning user-based website 
 - Render guides and comments on the page
 - Allow users to use a form to provide feedback 
-- Add a filter for the guides on the 'All Guides' page
 
 
 
@@ -104,10 +103,10 @@ https://github.com/JustinKnuth/MZG/blob/main/mzg/Wireframes%20/Mobile%20cont..pn
 |Mar 15| Prompt / Wireframes / Timeframes / Project Approval | Complete
 |Mar 16| Core Structure / Airtable / Pseudocode | Complete
 |Mar 17| API Calls and Component Writing / CSS | Complete
-|Mar 18| Render Data / MVP | incomplete /
-|Mar 19| Initial Clickable Model  | incomplete
-|Mar 20| Responsive Design / Refine CSS | incomplete
-|Mar 21| Responsive Design / Refine CSS | incomplete
+|Mar 18| Render Data / MVP | Complete /
+|Mar 19| Initial Clickable Model  | Complete
+|Mar 20| Responsive Design / Refine CSS | Complete
+|Mar 21| Responsive Design / Refine CSS | Complete
 |Mar 22| Presentations | incomplete
 
 
@@ -117,28 +116,27 @@ https://github.com/JustinKnuth/MZG/blob/main/mzg/Wireframes%20/Mobile%20cont..pn
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Planning / Preparation  | H | 3hrs| 0hrs | 0hrs |
-| Research Similar Products | L | 3hrs | 0hr | 0hr |
-| Core Structure  | H | 3hr | 0hr | 0hr |
-| CSS grid and/or flex styling  | H | 3hrs | 0hrs | 0hrs
+| Planning / Preparation  | H | 3hrs| 3hrs | 3hrs |
+| Research Similar Products | L | 3hrs | 1hr | 1hr |
+| Core Structure  | H | 3hr | 2hrs | 2hrs |
 | Pseudocode  | L | 1hr | 0m | 0m |
-| Create and read functions for API  | H | 3hrs | 0hrs | 0hrs |
-| Retrieve Correct Data  | H | 3hrs | 0hr | 0hr |
-| Display Correct Data | H | 3hrs | 0hrs | 0hrs |
-| Media Queries | H | 3hrs | 0hrs | 0hrs |
-| Navigation Menu Creation and Style | H | 2.5hrs | 0hrs | 0hrs |
-| Create User-Friendly Experience | H | 3hrs | 0hrs | 0hrs |
-| Debugging | H | 3hrs | 0hr | 0hr |
-| Code Organization for Readability | H | 2hrs | 0hr | 0hr
-| Image-Sizing | H | 2hrs | 0hr | 0hr |
-| Total | H | 35.5hrs | 0hrs | 0hrs |
+| Create and read functions for API  | H | 3hrs | 3hrs | 3hrs |
+| Retrieve Correct Data  | H | 3hrs | 3hrs | 3hrs |
+| Display Correct Data | H | 3hrs | 3hrs | 3hrs |
+| Media Queries | H | 3hrs | 10m | 10m |
+| Navigation Menu Creation and Style | H | 2.5hrs | 1hr | 1hr |
+| Create User-Friendly Experience | H | 3hrs | 1hr | 1hr |
+| Debugging | H | 3hrs | 4hrs | 4hrs |
+| Code Organization for Readability | H | 2hrs | 1hr | 1hr
+| Image-Sizing | H | 2hrs | 10m | 10m |
+| Total | H | 35.5hrs | 22hrs | 22hrs |
 
 
 ## SWOT
 
 ### Strengths
 
-- I done a fair amount of planning, thinking and note-taking for my idea. I am confident I can pull it off. I've got a better understanding of CSS gird and how to implement it. I feel good about the useState and useEffect as well. I also know how to dig deep and look for knowledge and answers online.
+- I've done a fair amount of planning, thinking and note-taking for my idea. I am confident I can pull it off. I've got a better understanding of CSS gird and how to implement it. I feel good about the useState and useEffect as well. I also know how to dig deep and look for knowledge and answers online.
 
 ### Weaknesses
 
