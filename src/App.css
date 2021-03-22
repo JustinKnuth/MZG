@@ -74,6 +74,10 @@ nav a {
   text-transform: uppercase;
 }
 
+.details{
+  font-size: 20px;
+  
+}
 
 .home {
   font-size: 20px;
@@ -151,4 +155,26 @@ nav a {
 }
 .comments h5 {
   color: #F47D20;
+}
+
+@media screen and (max-width: 375px){
+  details{
+    font-size: 70%;
+
+  }
+  nav a{
+    font-size: 80%;
+  }
+
+}
+
+@media screen and (max-width: 650px){
+  details{
+    font-size: 70%;
+
+  }
+  nav a{
+    font-size: 90%;
+  }
+
 }

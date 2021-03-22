@@ -41,7 +41,7 @@ function GuideDetails(props) {
   }, [toggleFetch])
   
 
-  
+
   if (!found) {
     return <h2>Loading</h2>
   }
@@ -50,7 +50,7 @@ function GuideDetails(props) {
   return (
     <div>
       <div>
-        <p style={{fontSize: "20px"}}>{description}</p>
+        <p className="details">{description}</p>
         
 
       </div>

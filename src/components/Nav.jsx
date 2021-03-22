@@ -21,10 +21,7 @@ function Nav() {
           <li>All Guides</li>
 
           </Link>
-          <Link to="/">
-          <li>Contact</li>
-
-          </Link>
+          
         </ul>
       </nav>
 
