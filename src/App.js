@@ -8,7 +8,6 @@ import Home from "./components/Home.jsx";
 import AllGuides from "./components/AllGuides.jsx";
 import { baseURL, config } from "./services";
 import GuideDetails from "./components/GuideDetails.jsx";
-import JumpTo from "./components/JumpTo.jsx"
 
 function App() {
   const [guides, setGuides] = useState([])

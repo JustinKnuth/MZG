@@ -1,7 +1,4 @@
-import axios from "axios"
 import { Link, Route } from "react-router-dom"
-import GuideDetails from "./GuideDetails.jsx"
-import { useParams } from "react-router-dom"
 
 function Guide(props) {
 
