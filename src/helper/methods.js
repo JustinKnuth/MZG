@@ -7,7 +7,7 @@ import {
  export const switchIt = (paramId) => {
  
   let table = '';
-                      ////// Switch statement to change the URL id to match the table
+                      
   switch (paramId) {
     case travelEssentials:
       table = 'essentials';

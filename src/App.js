@@ -14,7 +14,6 @@ function App() {
   
   useEffect(() => {
     const getData = async () => {
-      //const url = 'https://api.airtable.com/v0/appP8Am4eIgzdu7Ma/guide-blocks?api_key=keyiWYDbJx9kSGQOw'
       const res = await axios.get(`${baseURL}/guide-blocks`, config)
       setGuides(res.data.records)
     }
