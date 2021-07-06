@@ -132,28 +132,7 @@ https://github.com/JustinKnuth/MZG/blob/main/mzg/Wireframes%20/Mobile%20cont..pn
 | Total | H | 35.5hrs | 22hrs | 22hrs |
 
 
-## SWOT
 
-### Strengths
-
-- I've done a fair amount of planning, thinking and note-taking for my idea. I am confident I can pull it off. I've got a better understanding of CSS gird and how to implement it. I feel good about the useState and useEffect as well. I also know how to dig deep and look for knowledge and answers online.
-
-### Weaknesses
-
-- I get confused by the component hierarchy and it is sometimes difficult to vision. Props and state still confuse me. I will definitely seek out help from the instructors if I need to.
-
-### Opportunities
-
-- I have the opportunity to finally come to an understanding of react by building a project. I think I will have a breakthrough when I am actually creating my own app.
-
-### Threats 
-
-- Time. I need to manage my time really well this week in order to learn more about what I am doing and fully implement everything I've learned.
-
-
-
-
-## Code Snippet
 
 
         
