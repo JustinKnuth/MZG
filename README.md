@@ -6,7 +6,7 @@
 
 ## Project Description
 
-Montpelier Zombie Guide is a zombie apocalypse guide for the small town of Montpelier, Vermont. This "guide" is built using React JS and Airtable. There is around 20 guides that are preset by admin. Each guide will be dedicated to a certain subject. Some subject examples are escape routes, food, water, shelter and more. Each guide has its own thread where users can comment and make suggestions. Suggestions with the most upvotes will be appended to the guide every week. Users can also reach out to admin directly and offer suggestions for new guides or new threads.
+Montpelier Zombie Guide is a zombie apocalypse guide for the small town of Montpelier, Vermont. This "guide" is built using React JS and Airtable. There are around 20 guides that are preset by admin. Each guide will be dedicated to a certain subject. Some subject examples are escape routes, food, water, shelter and more. Each guide has its own thread where users can comment and make suggestions. Suggestions with the most upvotes will be appended to the guide every week. Users can also reach out to admin directly and offer suggestions for new guides or new threads.
 
 
 ## API and Data Sample
